@@ -49,7 +49,7 @@ class Song
     name = find_by_name(crop_string_between_markers(filename, ' - ', '.mp3'))
     artist = filename.split(' - ').first
     new_song = Song.create_by_name(name)
-    new_song.artist = artist
+    new_song.artist_name = artist
   end
     
 end
