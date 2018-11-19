@@ -47,9 +47,13 @@ class Song
   
   def self.new_from_filename(filename)
     info = filename.chomp('.mp3').split(' - ')
-    create_by_name(info[1]).artist_name = info[0]
-    all.last
+    song = new_by_name(info[1])
+    song.artist_name = info[0]
+    song
   end
+  
+  def self.create_from_filename(filename)
+    new_from_filename(filename)
     
 end
 
