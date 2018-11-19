@@ -58,7 +58,7 @@ class Song
   end
   
   def self.destroy_all
-    all.delete!
+    all.delete(/.*/)
   end
 end
 
