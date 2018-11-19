@@ -46,8 +46,8 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    name = find_by_name(crop_string_between_markers(filename, ' - ', '.mp3'))
-    artist = filename.split(' - ').first
+    info = filename.split(' - ')
+    info[1] = info[1].split
     new_song = Song.create_by_name(name)
     new_song.artist_name = artist
   end
