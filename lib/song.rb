@@ -50,5 +50,5 @@ class Song
 end
 
 def crop_string_between_markers(string, m1, m2)
-  string[\]
+  string[/#{Regexp.escape(m1)(.*?)]
 end
