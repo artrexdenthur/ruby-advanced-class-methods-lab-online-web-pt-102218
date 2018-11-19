@@ -45,7 +45,9 @@ class Song
     all.sort_by { |song| song.name }
   end
   
-  def self.new_from_filename
+  def self.new_from_filename(filename)
+    find_by_name(crop_string_between_markers(filename, ' - ', '.mp3'))
+  end
     
 end
 
