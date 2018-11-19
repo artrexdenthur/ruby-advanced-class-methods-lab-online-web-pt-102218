@@ -58,6 +58,7 @@ class Song
   end
   
   def self.destroy_all
+    puts all
     @@all = []
   end
 end
