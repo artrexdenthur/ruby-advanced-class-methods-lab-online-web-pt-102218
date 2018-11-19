@@ -48,7 +48,8 @@ class Song
   def self.new_from_filename(filename)
     filename.delete!('.mp3')
     info = filename.split(' - ')
-    create_by_name(info[1]).artist_name = info[0]
+    create_by_name(info[1]).artist_name = info[1]
+    all.last
   end
     
 end
