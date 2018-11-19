@@ -49,6 +49,6 @@ class Song
     
 end
 
-def crop_string_between_markers(m1, m2)
-  
+def crop_string_between_markers(string, m1, m2)
+  string[\]
 end
