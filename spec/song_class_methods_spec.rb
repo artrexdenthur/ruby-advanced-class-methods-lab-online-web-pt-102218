@@ -57,6 +57,7 @@ describe "Song Class Methods" do
     end
     
     it 'creates a new Song object with the provided title if one doesn\'t already exist' do
+      binding.pry
       blank_space = Song.find_by_name("Blank Space")
       expect(blank_space).to be(nil)
 
