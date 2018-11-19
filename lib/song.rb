@@ -48,3 +48,7 @@ class Song
   def self.new_from_filename
     
 end
+
+def crop_string_between_markers(m1, m2)
+  
+end
