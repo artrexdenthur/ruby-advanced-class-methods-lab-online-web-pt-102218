@@ -59,6 +59,7 @@ class Song
   
   def self.destroy_all
     puts all
+    binding.pry
     @@all = []
   end
 end
