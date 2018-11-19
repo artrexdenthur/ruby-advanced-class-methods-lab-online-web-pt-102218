@@ -53,4 +53,5 @@ end
 
 def crop_string_between_markers(string, m1, m2)
   string[/#{Regexp.escape(m1)}(.*?)#{Regexp.escape(m2)}/m, 1]
+  binding.pry
 end
