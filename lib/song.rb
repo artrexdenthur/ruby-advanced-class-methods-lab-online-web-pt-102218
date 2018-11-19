@@ -42,7 +42,7 @@ class Song
   end
   
   def self.alphabetical
-    all.sort_by { |song| song.name }
+    @@all.sort_by { |song| song.name }
   end
   
   def self.new_from_filename(filename)
@@ -54,12 +54,10 @@ class Song
   
   def self.create_from_filename(filename)
     new_from_filename(filename).save
-    all.last
+    @@all.last
   end
   
   def self.destroy_all
-    puts all
-    binding.pry
     @@all = []
   end
 end
