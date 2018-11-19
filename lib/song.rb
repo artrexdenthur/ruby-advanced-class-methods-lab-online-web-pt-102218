@@ -56,6 +56,10 @@ class Song
     new_from_filename(filename).save
     all.last
   end
+  
+  def self.destroy_all
+    all = []
+  end
 end
 
 def crop_string_between_markers(string, m1, m2)
